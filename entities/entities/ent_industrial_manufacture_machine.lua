@@ -61,7 +61,7 @@ end
 
 function ENT:Initialize()
 	if SERVER then
-        self:SetModel("models/props_mining/elevator_winch_empty.mdl")
+        self:SetModel("models/props_wasteland/laundry_washer003.mdl")
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)
@@ -373,7 +373,6 @@ function ENT:Use( pPlayer )
 			if iChanceForInjury == 1 then
 				pPlayer:TakeDamage( 45 )
 				pPlayer:ViewPunch( Angle( 3, 0, 2 ) )
-				pPlayer:Notify( L("helix.industrial.injuryMachine"), 8, 1 )
 			end
 
 			self.iNextResourceCreation = CurTime() + 2
@@ -463,10 +462,3 @@ end
 function ENT:Draw()
 	self:DrawModel()
 end
-
-hook.Add( "Monolith._Kernel.PostFullLoad", "AddIndustrialMachineCallbacks", function()
-    Monolith._Kernel:AddCachedEntityDrawCallback( "PostDrawTranslucentRenderables", "ent_industrial_manufacture_machine", 340000, function( eEntity )
-		eEntity:DrawSmokeEffect()
-		eEntity:DrawOnlineEffects()
-    end )
-end )

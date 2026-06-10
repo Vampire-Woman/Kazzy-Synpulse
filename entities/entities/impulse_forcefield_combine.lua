@@ -185,8 +185,8 @@ function ENT:Initialize()
 	self:SetSkin(0)
 	self:GetDummy():SetSkin(0)
 
-	self.bbuzzer = CreateSound(self, "ambient/machines/wall_loop1.wav")
-	self.fbuzzer = CreateSound(self.dummy, "ambient/machines/wall_loop1.wav")
+	self.bbuzzer = CreateSound(self, "ambient/machines/combine_shield_loop3.wav")
+	self.fbuzzer = CreateSound(self.dummy, "ambient/machines/combine_shield_loop3.wav")
 
 	if self.bbuzzer and self.fbuzzer then
 		local timerName = "BBuzzerLoop_" .. self:EntIndex()

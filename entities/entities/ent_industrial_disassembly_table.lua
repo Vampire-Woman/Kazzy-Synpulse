@@ -16,7 +16,7 @@ function ENT:CreateResource( pPlayer )
 
 	timer.Simple( 0.1, function()
 		local eResource = ents.Create( "ent_industrial_combine_resource" )
-		eResource:SetPos( self:GetPos() + Vector( -10, -30, 17.3 ) )
+		eResource:SetPos( self:GetPos() + Vector( 10, 40, 40 ) )
 		eResource:Spawn()
 		eResource:Activate()
 		
@@ -44,7 +44,7 @@ end
 
 function ENT:Initialize()
 	if SERVER then
-        self:SetModel("models/hls/alyxports/table_proccesing.mdl")
+        self:SetModel("models/props/cs_italy/it_mkt_table2.mdl")
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)
@@ -174,9 +174,9 @@ function ENT:DrawProductPreview()
 	end
 
 	if not IsValid( self.ProductPreview ) and self:GetProductAmount() > 0 and bShouldDraw then
-		self.ProductPreview = ClientsideModel( "models/hls/alyxports/wood_crate004.mdl" )
+		self.ProductPreview = ClientsideModel( "models/props_junk/wood_crate002a.mdl" )
 		self.ProductPreview:SetParent( self )
-		self.ProductPreview:SetLocalPos( Vector( 0, 0, 17 ) )
+		self.ProductPreview:SetLocalPos( Vector( 0, 0, 56.2 ) )
 		self.ProductPreview:SetLocalAngles( Angle( 0, -180, 0 ) )
 	end
 end

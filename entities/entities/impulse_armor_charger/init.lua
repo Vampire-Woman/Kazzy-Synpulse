@@ -26,7 +26,7 @@ function ENT:Use(activator, caller)
 
     -- Must be OTA
     if (caller:Team() ~= TEAM_OTA) then
-        caller:Notify("You must be an OTA unit to use this.")
+        caller:EmitBudgetSound("items/suitchargeno1.wav")
         self.delay = CurTime() + 1
         return
     end

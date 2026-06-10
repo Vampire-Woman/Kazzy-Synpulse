@@ -14,7 +14,7 @@ ENT.PhysgunPickupDisabled = false
 function ENT:Initialize()
 	if not SERVER then return end
 
-	self:SetModel("models/ctvehicles/hla/prisoner_transport.mdl")
+	self:SetModel("models/props_wasteland/laundry_washer001a.mdl")
 	self:PhysicsInit(SOLID_VPHYSICS)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)

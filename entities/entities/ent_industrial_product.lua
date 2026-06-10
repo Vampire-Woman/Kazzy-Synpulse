@@ -12,28 +12,7 @@ ENT.AutomaticFrameAdvance = false
 ENT.PhysgunPickupDisabled = false
 
 local tProps = {
-	"models/hls/alyxports/ration_box.mdl",
-	"models/hls/alyxports/ration_box.mdl",
-	"models/hls/alyxports/ration_box.mdl",
-	"models/hls/alyxports/ration_box.mdl",
-	"models/hls/alyxports/ration_box.mdl",
-	"models/hls/alyxports/ration_bar.mdl",
-	"models/hls/alyxports/ration_bar.mdl",
-	"models/hls/alyxports/ration_bar.mdl",
-	"models/hls/alyxports/ration_bar.mdl",
-	"models/hls/alyxports/ration_bar.mdl",
-	"models/hls/alyxports/popcan01a_hls.mdl",
-	"models/hls/alyxports/popcan01a_hls.mdl",
-	"models/hls/alyxports/popcan01a_hls.mdl",
-	"models/hls/alyxports/popcan01a_hls.mdl",
-	"models/Items/battery.mdl",
-	"models/hls/alyxports/ration_package.mdl",
-	"models/hls/alyxports/ration_package.mdl",
-	"models/hls/alyxports/ration_package.mdl",
-	"models/hls/alyxports/ration_package.mdl",
-	"models/hls/alyxports/ration_package.mdl",
-	"models/synapse/hl_a/police_radio.mdl",
-	"models/synapse/metropolice/cpuniform.mdl"
+	"models/Items/battery.mdl"
 }
 
 function ENT:Initialize()

@@ -13,7 +13,7 @@ ENT.PhysgunPickupDisabled = false
 
 function ENT:Initialize()
     if SERVER then
-        self:SetModel("models/hls/alyxports/wood_crate004.mdl")
+        self:SetModel("models/props_junk/wood_crate002a.mdl")
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)

@@ -12,8 +12,8 @@ ENT.AutomaticFrameAdvance = false
 ENT.PhysgunPickupDisabled = false
 
 local tModels = {
-	"models/hls/alyxports/cardboard_box_1.mdl",
-	"models/hls/alyxports/cardboard_box_3.mdl"
+	"models/props_junk/cardboard_box001a.mdl",
+	"models/props_junk/cardboard_box002a.mdl"
 }
 
 sound.Add({
@@ -27,7 +27,7 @@ function ENT:CreatePackage( pPlayer, sModel )
 
 	timer.Simple( 0.1, function()
 		local ePackage = ents.Create( "ent_industrial_package" )
-		ePackage:SetPos( self:GetPos() + Vector( 0, 0, 36 ) )
+		ePackage:SetPos( self:GetPos() + Vector( 0, 0, 49 ) )
 		ePackage:Spawn()
 		ePackage:Activate()
 		
@@ -137,7 +137,6 @@ function ENT:Use( pPlayer )
 		if iChanceForInjury == 1 then
 			pPlayer:TakeDamage( 2 )
 			pPlayer:ViewPunch( Angle( 3, 0, 2 ) )
-			pPlayer:Notify("You have hurt yourself or something")
 		end
 	end, {
 		--ent = self,
@@ -171,7 +170,7 @@ function ENT:DrawProductPreview()
         -- Create preview
         self.ProductPreview = ClientsideModel(self:GetSelectedModel())
         self.ProductPreview:SetParent(self)
-        self.ProductPreview:SetLocalPos(Vector(0, 0, 36))
+        self.ProductPreview:SetLocalPos(Vector(0, 0, 49))
         self.ProductPreview:SetLocalAngles(Angle(0, 0, 0))
     end
 

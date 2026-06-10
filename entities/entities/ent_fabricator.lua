@@ -14,7 +14,7 @@ ENT.PhysgunPickupDisabled = false
 -- Initialize the Fabricator
 function ENT:Initialize()
     if SERVER then
-        self:SetModel("models/synapse/props/fabricator.mdl")
+        self:SetModel("models/props_combine/headcrabcannister01a.mdl")
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)

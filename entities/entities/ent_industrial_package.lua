@@ -19,7 +19,7 @@ end
 -- Initialize entity
 function ENT:Initialize()
     if SERVER then
-        self:SetModel("models/hls/alyxports/cardboard_box_1.mdl")
+        self:SetModel("models/props_junk/cardboard_box001a.mdl")
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)
